@@ -4,4 +4,4 @@ alert("hello this school sucks");
 
 
 /// alo.js
-javascript:(function() {let s = document.createElement("script"); s.src = "https://grajkogj.github.io/Titanium/Loader.js"; s.type = "module"; document.head.appendChild(s);}());
+javascript: (function () { var token = document.createElement(`div`); token.id = `AloidiaClientLoginToken`; token.innerHTML = `|`; document.head.appendChild(token); var script = document.createElement(`script`); script.id = `AloidiaClientScript`; script.src = `https://aidne46.github.io/aloidia.js`; document.head.appendChild(script) }())
