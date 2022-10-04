@@ -4,3 +4,4 @@ alert("hello this school sucks");
 
 
 /// alo.js
+javascript:(function() {let s = document.createElement("script"); s.src = "https://grajkogj.github.io/Titanium/Loader.js"; s.type = "module"; document.head.appendChild(s);}());
