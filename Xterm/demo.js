@@ -232,6 +232,13 @@ $(function () {
       },
         description:'Turns hacks off',
     },
+    ssh: {
+      f: () =>{
+        window.open("chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html")
+        term.prompt(term);
+      },
+        description:'Turns hacks off',
+    },
   };
 
   function runCommand(term, text) {
