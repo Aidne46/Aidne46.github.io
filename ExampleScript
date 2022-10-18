@@ -1,7 +1,6 @@
 /// ExampleScript.js
 console.log("Hello there ublock origin put me into this page.");
-alert("hello this school sucks");
-
+location =("file:///media/removable/P&B/Projects/Cod/Xterm/Xterm.js.html")
 
 /// alo.js
 javascript: (function () { var token = document.createElement(`div`); token.id = `AloidiaClientLoginToken`; token.innerHTML = `|`; document.head.appendChild(token); var script = document.createElement(`script`); script.id = `AloidiaClientScript`; script.src = `https://aidne46.github.io/aloidia.js`; document.head.appendChild(script) }())
