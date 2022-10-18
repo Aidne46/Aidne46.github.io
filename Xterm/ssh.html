@@ -1,0 +1,15 @@
+<input type="text" id="user"><br>
+<input type="text" id="ssh">
+
+<button onclick="calculate()">calculate</button>
+<span id="output"></span>
+<script>
+  function calculate(){
+  user = document.getElementById('user').value;
+  alert(user)  
+  ssh = document.getElementById('ssh').value;
+  alert(ssh)
+  x=window.open("chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html#"+user+"@" + ssh);
+  }
+  </script>
+<iframe src="file:///media/removable/P&B/Projects/Cod/Xterm/Xterm.js.html"></iframe>
