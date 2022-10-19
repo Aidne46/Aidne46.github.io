@@ -157,6 +157,13 @@ $(function () {
       },
       description: 'closes terminal',
     },
+    ssh: {
+      f: () =>{
+        window.open("chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html")
+        term.prompt(term);
+      },
+        description:'Turns hacks off',
+    },
     on: {
       f: () =>{
         apprunning="on"
@@ -173,17 +180,19 @@ $(function () {
     },
     nodata: {
       f: () => {
-        cancel = true;
+        commandrunning=true
+        apprunning="game"
+  term.write('\u001Bc') 
   setTimeout(function(){ term.write("(Game will launch in 4))") }, 1000);
-  setTimeout(function(){ term.write("\b \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b") }, 1001);
+  setTimeout(function(){ term.write('\u001Bc') }, 1001);
 	setTimeout(function(){ term.write("(Game will launch in 3))") }, 2000);
-	setTimeout(function(){ term.write("\b \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b") }, 2001);
+	setTimeout(function(){ term.write('\u001Bc') }, 2001);
 	setTimeout(function(){ term.write("(Game will launch in 2))") }, 3000);
-	setTimeout(function(){ term.write("\b \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b") }, 3001);
+	setTimeout(function(){ term.write('\u001Bc') }, 3001);
 	setTimeout(function(){ term.write("(Game will launch in 1))") }, 4000);
-	setTimeout(function(){ term.write("\b \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b") }, 4001);
+	setTimeout(function(){ term.write('\u001Bc') }, 4001);
 	setTimeout(function(){ term.write("(Game will launch in 0))") }, 5000);
-	setTimeout(function(){ term.write("\b \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b") }, 5001);
+	setTimeout(function(){ term.write('\u001Bc') }, 5001);
   setTimeout(function(){ term.prompt(term);}, 5005);
      
         
@@ -237,13 +246,7 @@ $(function () {
       },
         description:'Turns hacks off',
     },
-    ssh: {
-      f: () =>{
-        window.open("chrome-extension://pnhechapfaindjhompbnflcldabbghjo/html/nassh.html")
-        term.prompt(term);
-      },
-        description:'Turns hacks off',
-    },
+
   };
 
   function runCommand(term, text) {
