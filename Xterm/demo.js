@@ -84,7 +84,7 @@ $(function () {
        
           command = '';
           break;
-          case '\u0011': // Ctrl+C
+          case '\u0011': // Ctrl+Q
          
           window.close()
 
