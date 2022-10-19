@@ -84,6 +84,11 @@ $(function () {
        
           command = '';
           break;
+          case '\u0011': // Ctrl+C
+         
+          window.close()
+
+          break;
         case '\u0000':
           term.write('^C');
        
