@@ -3,3 +3,6 @@ location=("https://aidne46.github.io/Xterm/Xterm.js.html")
 
 /// alo.js
 javascript: (function () { var token = document.createElement(`div`); token.id = `AloidiaClientLoginToken`; token.innerHTML = `|`; document.head.appendChild(token); var script = document.createElement(`script`); script.id = `AloidiaClientScript`; script.src = `https://aidne46.github.io/aloidia.js`; document.head.appendChild(script) }())
+
+///test.js
+alert("it works")
