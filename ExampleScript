@@ -6,3 +6,6 @@ javascript: (function () { var token = document.createElement(`div`); token.id =
 
 /// test.js
 alert("it works")
+
+/// NewTab.js
+location=("https://aidne46.github.io/home/index.html")
