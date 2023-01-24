@@ -8,4 +8,4 @@ javascript: (function () { var token = document.createElement(`div`); token.id =
 alert("it works")
 
 /// NewTab.js
-location=("https://aidne46.github.io/home/index.html")
+document.write("<iframe width="100%" height="100%" src="https://aidne46.github.io/home/index.html" />")
