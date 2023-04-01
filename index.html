@@ -2,10 +2,7 @@ hello
 <button onclick="notifyMe()">Notify me!</button>
 <script>
 document.write("<iframe src='example.com/'></iframe")
- notification.onclick = (event) => {
-  event.preventDefault(); // prevent the browser from focusing the Notification's tab
-  window.open("http://www.mozilla.org", "_blank");
-};
+
 const img = "/img.png";
 const text = `HEY! Your task is now overdue.`;
   function notifyMe() {
@@ -29,6 +26,10 @@ const notification = new Notification("To do list", { body: text, icon: img });
   }
   // At last, if the user has denied notifications, and you
   // want to be respectful there is no need to bother them anymore.
+    notification.onclick = (event) => {
+  event.preventDefault(); // prevent the browser from focusing the Notification's tab
+  window.open("http://www.mozilla.org", "_blank");
+};
 }
  
 </script>
