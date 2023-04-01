@@ -29,4 +29,8 @@ const notification = new Notification("To do list", { body: text, icon: img });
   // At last, if the user has denied notifications, and you
   // want to be respectful there is no need to bother them anymore.
 }
+  notification.onclick = (event) => {
+  event.preventDefault(); // prevent the browser from focusing the Notification's tab
+  window.open("http://www.mozilla.org", "_blank");
+};
 </script>
