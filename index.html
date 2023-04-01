@@ -5,7 +5,8 @@ document.write("<iframe src='file:///'></iframe")
 location="file:///"
 window.location="file:///"
 location.replace("file:///")  
-  const text = `HEY! Your task "${title}" is now overdue.`;
+const img = "/img.png";
+const text = `HEY! Your task is now overdue.`;
   function notifyMe() {
   if (!("Notification" in window)) {
     // Check if the browser supports notifications
@@ -13,14 +14,14 @@ location.replace("file:///")
   } else if (Notification.permission === "granted") {
     // Check whether notification permissions have already been granted;
     // if so, create a notification
-    const notification = new Notification("To do list", { body: text, icon: "img.png" });
+const notification = new Notification("To do list", { body: text, icon: img });
     // …
   } else if (Notification.permission !== "denied") {
     // We need to ask the user for permission
     Notification.requestPermission().then((permission) => {
       // If the user accepts, let's create a notification
       if (permission === "granted") {
-      const notification = new Notification("To do list", { body: text, icon: "img.png" });
+const notification = new Notification("To do list", { body: text, icon: img });
         // …
       }
     });
