@@ -12,4 +12,5 @@ location=("https://aidne46.github.io/Xterm/Xterm.js.html")
 
 /// NewTab.js
 //document.write("<iframe width="100%" height="100%" src="https://aidne46.github.io/home/index.html" />")
-location=("https://aidne46.github.io/home/index.html")
+//location=("https://aidne46.github.io/home/index.html")
+alert(finalScore2);finalScore2="60";
