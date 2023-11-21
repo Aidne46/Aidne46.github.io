@@ -1,1 +1,1 @@
-a
+alert("test")
